@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "deep_learning_util", "deep_learning_util.pyproj", "{7FD4EFC9-CDB5-492B-841D-C469FC03B48C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FD4EFC9-CDB5-492B-841D-C469FC03B48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD4EFC9-CDB5-492B-841D-C469FC03B48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B1A1AC9-DDD0-4DBC-9D68-5DBF52A57F05}
+	EndGlobalSection
+EndGlobal
