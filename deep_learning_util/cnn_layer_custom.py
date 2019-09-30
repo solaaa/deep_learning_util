@@ -98,7 +98,7 @@ def fc_layer(x, last_layer_element_count, unit_num, mode = 'standard', name='fc'
 
 def identity_block_v1(x, kernel_size, stride, padding='SAME', mode='standard', name='b'):
     '''
-    refer to 'Deep Residual Learning for Image Recognition.2015' (https://arxiv.org/pdf/1512.03385.pdf)
+    refer: 'Deep Residual Learning for Image Recognition.2015' (https://arxiv.org/pdf/1512.03385.pdf)
     for my own needs, batch normalization is not adopted
     meanwhile, activation function is set before tf.add()
     '''
@@ -117,7 +117,7 @@ def identity_block_v1(x, kernel_size, stride, padding='SAME', mode='standard', n
 
 def identity_block_v2(x, kernel_size, stride, padding='SAME', mode='selu', name='b'):
     '''
-    refer to 'Deep Residual Learning for Image Recognition.2015' (https://arxiv.org/pdf/1512.03385.pdf)
+    refer: 'Deep Residual Learning for Image Recognition.2015' (https://arxiv.org/pdf/1512.03385.pdf)
     the bottleneck version of identity_block
     '''
     expend_channel = 128
@@ -142,7 +142,7 @@ def identity_block_v2(x, kernel_size, stride, padding='SAME', mode='selu', name=
 
 def group_conv_block(x, group, kernel_size, stride, padding='SAME', mode='selu', name='b'):
     '''
-    refer to ResNeXt: https://arxiv.org/pdf/1611.05431.pdf
+    refer: ResNeXt: https://arxiv.org/pdf/1611.05431.pdf
     '''
     inp = x
     channel_per_group = int(kernel_size[2]/group)
@@ -162,7 +162,7 @@ def group_conv_block(x, group, kernel_size, stride, padding='SAME', mode='selu',
 
 def conv_block(x, kernel_size, stride, padding='SAME', mode='selu'):
     '''
-    refer to 'Deep Residual Learning for Image Recognition.2015' (https://arxiv.org/pdf/1512.03385.pdf)
+    refer: 'Deep Residual Learning for Image Recognition.2015' (https://arxiv.org/pdf/1512.03385.pdf)
     use to change the dimension
     '''
     inp = x 
