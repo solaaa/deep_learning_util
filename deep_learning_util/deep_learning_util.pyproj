@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7fd4efc9-cdb5-492b-841d-c469fc03b48c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>deep_learning_util.py</StartupFile>
+    <StartupFile>cnn_layer_custom.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="deep_learning_util.py" />
+    <Compile Include="cnn_layer_custom.py" />
+    <Compile Include="spectrogram_data_augmentation.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
