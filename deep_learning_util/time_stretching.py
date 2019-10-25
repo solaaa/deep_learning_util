@@ -2,18 +2,14 @@ import os
 from pathlib import Path
 import numpy as np
 import time
-target_word_en = ['hi_xi_li_jie', 'chu_shi_mo_shi', 'da_kai_chuang_lian', 'da_kai_deng_guang',
-                      'da_kai_kong_tiao', 'guan_bi_chuang_lian', 'guan_bi_deng_guang', 'guan_bi_kong_tiao',
-                      'jia_re_mo_shi', 'jian_shao_liang_du', 'jiang_xia_liang_yi_jia', 'sheng_qi_liang_yi_jia',
-                      'ting_zhi_da_kai', 'ting_zhi_guan_bi', 'tong_feng_mo_shi', 'xiao_lv_tong_xue',
-                      'zeng_jia_liang_du', 'zhi_leng_mo_shi', 'zui_da_liang_du', 'zui_xiao_liang_du']
+target_word_en = ['zui_da_liang_du', 'zui_xiao_liang_du']
 
 MAX_LOOP = 2 # expand each .wav MAX_LOOP times 
 MIN_STRETCH = 0.6
 MAX_STRETCH = 1.1
 
-src_path = 'E:\\KWS\\data_baidu\\big_scale\\downsample\\'
-dst_path = 'E:\\KWS\\data_baidu\\big_scale\\time_stretch\\'
+src_path = '\\big_scale\\downsample\\'
+dst_path = '\\big_scale\\time_stretch\\'
 if (Path(src_path).exists()==False):
     os.mkdir(src_path)
 target_list = os.listdir(src_path)
