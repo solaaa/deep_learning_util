@@ -14,28 +14,23 @@ def open_wave(path):
     f.close()
     return wave_data, params[:3]
 
-if os.environ['COMPUTERNAME']=='YLI':
-    data_path = ''
-    save_path = ''
+if os.environ['COMPUTERNAME']=='Y':
+
 else:
-    data_path = 'E:\\KWS\\data_baidu\\big_scale\\time_stretch\\'
-    save_path = 'E:\\KWS\\data_baidu\\big_scale\\add_noise\\'
+    data_path = '\\big_scale\\time_stretch\\'
+    save_path = '\\big_scale\\add_noise\\'
 
 if (Path(save_path).exists()==False):
     os.mkdir(save_path)
 
 
-target_word = ['hi_xi_li_jie', 'chu_shi_mo_shi', 'da_kai_chuang_lian', 'da_kai_deng_guang',
-                'da_kai_kong_tiao', 'guan_bi_chuang_lian', 'guan_bi_deng_guang', 'guan_bi_kong_tiao',
-                'jia_re_mo_shi', 'jian_shao_liang_du', 'jiang_xia_liang_yi_jia', 'sheng_qi_liang_yi_jia',
-                'ting_zhi_da_kai', 'ting_zhi_guan_bi', 'tong_feng_mo_shi', 'xiao_lv_tong_xue',
-                'zeng_jia_liang_du', 'zhi_leng_mo_shi', 'zui_da_liang_du', 'zui_xiao_liang_du']
+target_word = ['zui_xiao_liang_du']
 
 snrs = [-10,-8, -6, -4, -2, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20] # dB
-wave_time = 4000 # 4000ms
+wave_time = 9000 # 4000ms
 Fs = 16000
 wave_len = int((wave_time/1000)*Fs)
-SRC_WAVE_POW = 10000000 # sum(Am)
+SRC_WAVE_POW = 100000 # sum(Am)
 
 print('start...')
 print('prepare noise...')
