@@ -33,7 +33,7 @@ def norm_wave(src_path, dst_path, max_volume):
 
 
 if __name__ == '__main__':
-    path = 'E:\\KWS\\data_baidu\\small_scale_example\\'
+    path = '\\small_scale_example\\'
     noise_path = path + '_background_noise_\\'
     dst_path = path + 'time_stretch\\_background_noise_\\'
     file_list = os.listdir(noise_path)
